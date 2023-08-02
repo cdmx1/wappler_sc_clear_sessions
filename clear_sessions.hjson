@@ -1,0 +1,59 @@
+[
+  {
+    "type": "clear_sessions",
+    "module": "clear_sessions",
+    "action": "clearSessions",
+    "groupTitle": "Sessions",
+    "groupIcon": "fas fa-lg fa-file comp-data",
+    "title": "Clear All User sessions",
+    "icon": "fas fa-lg fa-file comp-data",
+    "dataPickObject": true,
+    "dataScheme": [
+      {
+        "name": "file_name",
+        "type": "text"
+      }
+    ],
+    "properties": [
+      {
+        "group": "Clear Sessions",
+        "variables": [
+          {
+            "name": "actionName",
+            "optionName": "name",
+            "title": "Name",
+            "type": "text",
+            "required": true,
+            "defaultValue": ""
+          },
+          {
+            "name": "user_id",
+            "optionName": "user_id",
+            "title": "User ID",
+            "type": "text",
+            "required": true,
+            "defaultValue": "",
+            "serverDataBindings": true
+          },
+          {
+            "name": "security_provider",
+            "optionName": "security_provider",
+            "title": "Security Provider",
+            "type": "text",
+            "required": true,
+            "defaultValue": "",
+            "serverDataBindings": true,
+            "help": 'eg. admin_security'
+          },
+          {
+            "name": "output",
+            "optionName": "output",
+            "title": "Output",
+            "type": "boolean",
+            "defaultValue": false
+          }
+        ]
+      }
+    ]
+  }
+]

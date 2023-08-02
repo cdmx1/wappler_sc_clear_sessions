@@ -1,2 +1,1 @@
-# wappler_sc_clear_sessions
-# wappler_sc_clear_sessions
+This Wappler Module is used to clear User Session from a Defined Provider
