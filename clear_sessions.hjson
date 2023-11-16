@@ -5,15 +5,15 @@
     "action": "clearSessions",
     "groupTitle": "Sessions",
     "groupIcon": "fas fa-lg fa-file comp-data",
-    "title": "Clear All User sessions",
+    "title": "Clear User sessions",
     "icon": "fas fa-lg fa-file comp-data",
     "dataPickObject": true,
-    "dataScheme": [
-      {
-        "name": "file_name",
-        "type": "text"
+    "usedModules": {
+      "node": {
+        redis: "^4.6.6",
+        ioredis: "^5.3.2"
       }
-    ],
+    },
     "properties": [
       {
         "group": "Clear Sessions",
@@ -44,6 +44,16 @@
             "defaultValue": "",
             "serverDataBindings": true,
             "help": 'eg. admin_security'
+          },
+          {
+            "name": "redis_db",
+            "optionName": "redis_db",
+            "title": "Redis Database",
+            "type": "text",
+            "required": true,
+            "defaultValue": 0,
+            "serverDataBindings": true,
+            "help": 'eg. 0'
           },
           {
             "name": "output",
